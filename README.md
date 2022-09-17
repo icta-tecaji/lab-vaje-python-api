@@ -1,4 +1,4 @@
-# Laboratorijske vaje in domače naloge: Pytohn in API
+# Laboratorijske vaje in domače naloge: Python in API
 
 ## Laboratorijske vaje
 - [Lab vaja 1: Priprava okolja](./lab_01_priprava_okolja/README.md)
@@ -11,6 +11,6 @@
 - [Naloga 4: Povezava s SQL podatkovno bazo v Python-u](./dn_04_povezava_s_sql_bazo/README.md)
 - [Naloga 5: Mikro odjemalec za SQL v Python-u](./dn_05_mikro_sql_odjemalec_python/README.md)
 
-## Potrebni software za izvedbo
+## Potrebna programska oprema za izvedbo
 - Git: [Download for Windows](https://git-scm.com/download/win)
 - 
