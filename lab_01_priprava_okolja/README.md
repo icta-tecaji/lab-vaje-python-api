@@ -75,5 +75,6 @@ Premaknemo se v mapo `cd lab_01_priprava_okolja` in zaženemo skripto z ukazom `
 
 Da bomo v nadaljevanju lahko delali s kontejnerji je potrebno namestiti še Docker. 
 
-Prvi korak je namestitev WSL-ja za Windows. Podrobna navodila se nahajajo [tukaj](https://learn.microsoft.com/en-us/windows/wsl/install).
-
+1. Prvi korak je namestitev WSL-ja za Windows. Podrobna navodila se nahajajo [tukaj](https://learn.microsoft.com/en-us/windows/wsl/install).
+2. Prenesemo [namestitveno datoteko](https://docs.docker.com/desktop/install/windows-install/) za Docker.
+3. Zaženemo datoteko in namestimo Docker.
