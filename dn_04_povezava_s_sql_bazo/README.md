@@ -35,6 +35,9 @@ Z zgornjim ukazom smo naredili sledeče:
 
 S naslednjim ukazom preverimo ali je podatkovna baza uspešno zagnana: `docker ps`. Pričakonvan je naslednji izpis:
 - TODO dodaj sliko izpisa
+- lahko pokažemo samo preko UIja
 
 ## SQLAlchemy
+
+
 
