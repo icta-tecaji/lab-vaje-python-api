@@ -1,13 +1,21 @@
 # Laboratorijska vaja 1: Priprava okolja
 
-Na prvi laboratorijski vaji bomo pripravili okolje, ki ga bomo potrebovali skozi predmet.
+Na prvi laboratorijski vaji bomo pripravili okolje, ki ga bomo potrebovali skozi predmet. Pod podpoglavjem namestitev so navodila za namestitev posamezne programske opreme. Ta oprema je na fakultetnih računalnikih že nameščena, tako da tega koraka ni potrebno izvajat. Ta korak bo vam v pomoč pri pripravi okolja na lastnih računalnikih.
 
 ## Git in Github račun
+
+### Namestitev
 Gradiva in domače naloge boste tekom predmeta odajali na lasten Github repozitorji. Zato potrebujemo na računalniku nameščen Git. Namestimo ga tako, da iz [spletne strani](https://git-scm.com/download/win) prenesemo namestitveno datoteko (`Standalone Installer -> 64-bit Git for Windows Setup`). 
 
-Zaženemo preneseno datoteko in sprejmemo privzete nastavitve. Po uspešni namestitvi odpremo Windows Terminal. 
+Zaženemo preneseno datoteko in sprejmemo privzete nastavitve. 
+
+Za lažje delo lahko namestite Windows terminal.
 
 > Windows terminal lahko namestite preko Microsoft Apps Store. Orodje za nahaja [tukaj](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=sl-si&gl=si).
+
+### Konfiguracija
+
+Po uspešni namestitvi odpremo Windows Terminal. 
 
 Z ukazom `git --version` v terminalu preverimo ali smo uspešno namestili Git.
 
@@ -21,21 +29,32 @@ Za ime izpolnemo `TODO_NEKI`, izberemo `Public`, pri polju `Add .gitignore` izbe
 
 Ustvarjen repozitorji bomo klonirali na računalnik.
 
-- TODO zmenit se kako to naridmo (faks, lastni računalniki)
+- TODO zmenit se kako to naridmo (faks, lastni računalniki) -> ne kolonirajo repoto v na faks računalnikih
 - SSH ali token
 - pokažemo par uakzov kako pushenmo spremembo na računalnik
 
 ## Namestitev VS Code
+
+### Namestitev
 Za urejevalnik besedil bomo uporabljali Visual Studio Code, ki ga lahko najdemo [tukaj](https://code.visualstudio.com/).
 
-- Ali dodamo še par splošnih ukazov za delo z VSCode.
+### Konfiguracija
+
+Več informaciji o uporabi lahko najdete [tukaj](https://code.visualstudio.com/docs).
 
 ## Priprava Python okolja
+
+### Namestitev
+
 Namestimo [zadnjo verzijo Python-a](https://www.python.org/downloads/) na računalnik. Pri namestitvi pazimo, da pred namestitvijo izberemo opcijo `Add Python 3.10 to PATH` v namestitvenem meniju, ki se prikaže po zagonu prenesene datoteke.
 
 ![Python_install](./images/python_install.png)
 
-Nadaljujemo z izbiro `Install Now`. Po uspešni namestitvi lahko preverimo uspešnost namestitve z ukazom `python --version` v terminalu.
+Nadaljujemo z izbiro `Install Now`.
+
+### Konfiguracija
+
+Po uspešni namestitvi lahko preverimo uspešnost namestitve z ukazom `python --version` v terminalu.
 
 Interaktivni Python interpreter zaženemo tako, da v terminal vpišemo `python`. Po zagonu lahko začnemo v terminal vpisovati veljavne Python ukaze. Interpreter zapustimo z `exit()`
 
@@ -70,11 +89,3 @@ print("Hello Wolrd!")
 ```
 
 Premaknemo se v mapo `cd lab_01_priprava_okolja` in zaženemo skripto z ukazom `python moj_prvi_program.py`. V terminal se izpiše sporočilo iz skripte. Uspelo nam je zagnati prvi Pytohn program.
-
-## Namestitev Docker
-
-Da bomo v nadaljevanju lahko delali s kontejnerji je potrebno namestiti še Docker. 
-
-1. Prvi korak je namestitev WSL-ja za Windows. Podrobna navodila se nahajajo [tukaj](https://learn.microsoft.com/en-us/windows/wsl/install).
-2. Prenesemo [namestitveno datoteko](https://docs.docker.com/desktop/install/windows-install/) za Docker.
-3. Zaženemo datoteko in namestimo Docker.

@@ -1,4 +1,4 @@
-# Laboratorijska vaja 2: Uvod v FastAPI
+# Laboratorijska vaja 3: Uvod v FastAPI
 
 ## Uvod
 Na laboratorijskih vajah bomo za delo z API-ji uporabljali Python in knjižnico [FastAPI](https://fastapi.tiangolo.com/).
