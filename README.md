@@ -2,7 +2,7 @@
 
 ## Laboratorijske vaje
 - [Laboratorijska vaja 1: Priprava okolja](./lab_01_priprava_okolja/README.md)
-- [Laboratorijska vaja 2: Uvod v FastAPI](./lab_02_uvod_v_fastapi/)
+- [Laboratorijska vaja 2: Uvod v Python](./lab_02_uvod_v_python/README.md)
 
 ## Domače naloge
 - [Naloga 1: Python osnove 1.del](./dn_01_python_osnove_1/README.md)
