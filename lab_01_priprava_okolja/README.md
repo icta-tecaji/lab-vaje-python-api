@@ -27,11 +27,35 @@ Po uspešno ustvarjenem računu lahko ustvarimo novi repozitoriji s klikom na gu
 
 Za ime izpolnemo `TODO_NEKI`, izberemo `Public`, pri polju `Add .gitignore` izberemo `Python`. Ostalih polj ni potrebno spreminjat.
 
-Ustvarjen repozitorji bomo klonirali na računalnik.
+Ustvarjen repozitorji bomo klonirali na računalnik. Odpremo terminal v tisti mapi kjer bomo želeli shraniti repozitoriji.
 
-- TODO zmenit se kako to naridmo (faks, lastni računalniki) -> ne kolonirajo repoto v na faks računalnikih
-- SSH ali token
-- pokažemo par uakzov kako pushenmo spremembo na računalnik
+Repozitorji kloniramo s pomočjo ukaza `git clone <LINK_REPOZITORIJA>`. Link repozitorija najdemo na glavni strani repozitorija po kliku na zeleni gumb `Clone`. 
+
+![Github Link](./images/link.png)
+
+V klonirani mapi lahko ustvarite nekaj sprememb oziroma dodate novo datoteko.
+
+V naslednjem koraku bi želeli spremembe shraniti nazaj v repozitoriji. Ker je bil repozitoriji javen smo lahko podatke prenesli brez avtentikacije (to lahko storijo vsi). V primeru dodajanja podatkov pa se moramo avtenticirati. To lahko nardimo na dva načina:
+1. Povezava preko HTTPS:
+    - [Ustvarimo osebni žeton za dostop](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+    - Ta žeton si shranimo in ga uporabimo ob pushu na repozitoriji, ko nas vpraša za geslo.
+2. Povezava preko SSH:
+    - [Uvod v SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh)
+    - Pred prvo uporabo SSH moramo v repozitoriju spremeniti *origin* URL na naslednji način: `git remote set-url origin SSH_URL` (SSH_URL najdete pod zavihkom SSH ob kliku na gumb Code, začne se na `git@github.com:`)
+    - [Preverimo ali imamo na sistemo že SSH ključ](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys)
+    - [V primeru, da ključa ni ga ustvarimo](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+    - [Dodamo SSH ključ v Gtihub račun](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+    - [Preizkusimo delovanje](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection)
+
+Po uspešni avtentikaciji lahko spremembe dodamo v oddaljeni repozitoriji na Github-u. To naredimo na sledeči način:
+- Premaknemo se v mapo repozitorija.
+- Dodamo spremembe: `git add .`
+- Ustvarimo commit: `git commit -m "OPIS_SPREMEMB"`
+- Pushnemo spremembe: `git push origin main`
+
+Na Github-u preverimo ali so spremembe vidne.
+
+> **[Velja na fakultetnih računalnikih] Po končani vaji odstranite mapo z gradivi iz računalnika ter izbrišite SSH ključ na Github-u v primeru, da ste ga dodali.**
 
 ## Namestitev VS Code
 
